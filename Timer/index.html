@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>
+			Time
+		</title>
+		<style>
+		*{
+			padding:0;
+			margin:0;
+			font-family:sans-serif;
+		}
+
+		body{
+			background-color:black;
+			color:white;
+			height:100dvh;
+		}
+
+		#container{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			flex-direction:row;
+			flex-wrap: wrap;
+			height: 100%;
+			width:100%;
+		}
+
+		#group{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			flex-direction:row;
+		}
+
+		#AP{
+			margin-inline: 1rem;
+			padding-inline:2.5rem;
+			border-radius:2.5rem;
+		}
+
+		div#container,h6{
+			font-size:15vw;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="group">
+				<div class="time" id="hours">
+					00
+				</div>
+				:
+				<div class="time" id="minutes">
+					00
+				</div>
+				:
+				<div class="time" id="seconds">
+					00
+				</div>
+			</div>
+			<h6 id="AP"></h6>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
