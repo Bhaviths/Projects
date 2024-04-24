@@ -46,7 +46,7 @@ i{
 
 .sub-nav-bar-border{
     border:1.5px solid transparent;
-    height:25px;
+    height:20%;
     padding:.25rem;
     display: flex;
     align-items: center;
@@ -146,6 +146,9 @@ select{
 #all-hamburger{
     color:white;
     font-size:larger;
+    display: flex;
+    align-items: center;
+    height:30px;
 }
 
 #all-text{
