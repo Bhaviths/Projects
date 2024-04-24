@@ -36,7 +36,7 @@ i{
 }
 
 .border{
-    border:2px solid transparent;
+    border:1.5px solid transparent;
     border-radius:3px;
     height:40px;
     padding:.25rem;
@@ -45,7 +45,7 @@ i{
 }
 
 .sub-nav-bar-border{
-    border:2px solid transparent;
+    border:1.5px solid transparent;
     height:25px;
     padding:.25rem;
     display: flex;
@@ -60,11 +60,11 @@ i{
 }
 
 .border:hover{
-    border:2px solid white;
+    border:1.5px solid white;
 }
 
 .sub-nav-bar-border:hover{
-    border:2px solid white;
+    border:1.5px solid white;
 }
 
 .nav-location{
