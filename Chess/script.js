@@ -190,8 +190,8 @@ function pawnFirstMoveOption(pawn){
     if(number == 2)
     {
         let option = document.createElement('div');
-        option.style.height = "25px";
-        option.style.width = "25px";
+        option.style.height = "2.5vw";
+        option.style.width = "2.5vw";
         option.style.backgroundColor = "blue";
         option.style.borderRadius = "100%";
         option.id = "blueDot";
@@ -218,8 +218,8 @@ function pawnFirstMoveOption(pawn){
         if(number == 7)
         {
             let option = document.createElement('div');
-            option.style.height = "25px";
-            option.style.width = "25px";
+            option.style.height = "2.5vw";
+            option.style.width = "2.5vw";
             option.style.backgroundColor = "blue";
             option.style.borderRadius = "100%";
             option.id = "blueDot";
@@ -287,8 +287,8 @@ function pawnMove(pawn){
     letter = letter.slice(0,1)
     word = pawn.id.slice(0,-3)
     let option = document.createElement('div');
-    option.style.height = "25px";
-    option.style.width = "25px";
+    option.style.height = "2.5vw";
+    option.style.width = "2.5vw";
     option.style.borderRadius = "100%";
     option.style.backgroundColor = "yellow";
     option.id = "yellowDot";
