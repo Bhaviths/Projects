@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <!-- a/c no 024610039947
+        cust id 5018223330 -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Tic-Tac-Toe
+        </title>
+    </head>
+    <body>
+        <div id="cover-prompt">
+        </div>
+        <div id="prompt">
+            <h1>Choose Player</h1>
+            <div id="players">
+                <button onclick="choosePlayer(this)" id="X">X</button>
+                <button onclick="choosePlayer(this)" id="O">O</button>
+            </div>
+        </div>
+            <header>
+                <h1>Tic-Tac-Toe</h1><br>
+            </header>
+
+            
+            
+            <main>
+                
+                <h3>Player <span id="player"></span>'s Turn</h3><br>
+                <div class="container">
+                    <button class="box" id="b1"></button>
+                    <button class="box" id="b2"></button>
+                    <button class="box" id="b3"></button>
+                    <button class="box" id="b4"></button>
+                    <button class="box" id="b5"></button>
+                    <button class="box" id="b6"></button>
+                    <button class="box" id="b7"></button>
+                    <button class="box" id="b8"></button>
+                    <button class="box" id="b9"></button>
+                </div>
+                <br>
+                <br>
+                <h3>Result: <span id="result"></span></h3>
+                <br>
+                <br>
+                <div id="btn">
+                    <button id="reset">Reset</button>
+                </div>
+
+            </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
