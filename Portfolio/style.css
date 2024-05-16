@@ -1,0 +1,350 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:Arial,sans-serif;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:black;
+    color:white;
+}
+
+/*NavBar*/
+
+nav{
+    position: sticky;
+    top:1rem;
+    margin-block:1.5rem;
+    height:5rem;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:1rem;
+    border:1px solid black;
+}
+
+h1{
+    background-color: lightgreen;
+    padding:1.75rem;
+    color:green;
+    position: sticky;
+    font-size:xx-large;
+    font-family:system-ui;
+    border:1px solid black;
+}
+
+nav a{
+    text-decoration:none;
+}
+
+ul{
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+    list-style:none;
+    font-weight:bolder;
+    font-size:larger;
+}
+
+li{
+    padding:1rem;
+    font-size:larger;
+    width:6.5rem;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+    border-bottom: 4px solid transparent;
+    transition: border .5s ease-in;
+}
+
+li:hover,.active{
+    border-bottom: 4px solid lightgreen;
+}
+
+ul a{
+    text-decoration: none;
+    color:lightgreen;
+}
+
+ul a:hover{
+    color:white;
+}
+
+.toggle{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+}
+
+.toggle a{
+    width:90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: .5rem;
+    padding: .5rem;
+    background-color: green;
+    border-radius: 1rem 0rem 1rem 1rem;
+    border:1px solid black;
+    box-shadow:5px 5px 5px lightgreen;
+}
+
+#hamburger-container{
+    position: relative;
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.tile{
+    height:5px;
+    width:50px;
+    background-color: white;
+    margin:.25rem;
+    border-radius: 5px;
+}
+
+.header{
+    width:100%;
+    font-size:xx-large;
+    padding-bottom:.5rem;
+    border-bottom:2.5px solid lightgreen;
+    color:lightgreen;
+}
+
+/*main*/
+
+#about,#resume,#contact{
+    padding:2rem;
+    background-color: darkgreen;
+    cursor: default;
+}
+
+/* Home */
+
+#home{
+    height:100svh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#home-header{
+    font-size:6rem;
+    text-align: center;
+}
+
+#hello{
+    transition:all 1s ease-in-out;
+}
+
+#name{
+    font-family:monospace;
+    font-weight:bolder;
+    color:green;
+}
+
+/* About */
+
+#about{
+    padding-top:10rem;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-cover{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    flex-wrap:wrap;
+    background-image: url("photo.png");
+    background-size:40rem;
+    background-position: left;
+    background-repeat:no-repeat;
+    height:750px;
+    width:80svw;
+}
+
+.card{
+    background-color:green;
+    color: lightgreen;
+    margin:2.5rem;
+    border:2.5px solid lightgreen;
+    padding:2.5rem;
+    height:500px;
+    width:45svw;
+    max-width:450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+@media (max-width:1225px){
+    .card{
+        position: static;
+    }
+
+    #about-cover{
+        background-image: none;
+        justify-content: center;
+    }
+
+    #image-cover{
+        background-image:url("photo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:7.5rem;
+        aspect-ratio: 1/1;
+        border-radius:100%;
+        min-height: 100px;
+    }
+}
+
+.card h2{
+    padding-top:1.5rem;
+    padding:1rem;
+}
+
+#job-post,.year,.certificate,.lang,.projects{
+    font-size:large;
+    color:lightseagreen;
+    font-weight:bolder;
+    padding:2.5rem;
+}
+
+#about-description{
+    word-spacing: .5em;
+    letter-spacing: .25em;
+    text-align: center;
+}
+
+/* Resume */
+
+#resume{
+    padding-top:10rem;
+    display: flex;
+    justify-content: center;
+}
+
+#resume-cover{
+    width:75svw;
+    background-color: rgb(0, 255, 0);
+    max-width:1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.edu,.skil,.lan,.pro{
+    width:350px;
+}
+
+.exam-details,.skill,.lang{
+    font-size:x-large;
+}
+
+.education,.skills,.languages{
+    width:100svw;
+    text-align: center;
+    margin-top:2.5rem;
+}
+
+.lan,.pro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects{
+    font-size: x-large;
+}
+
+/* Footer */
+
+#contact-details{
+    display: flex;
+    justify-content: space-evenly;
+    padding:1rem;
+    flex-wrap: wrap;
+}
+
+#details{
+    margin-top:3.5rem;
+}
+
+#social-details{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    padding:2rem;
+    align-items: center;
+}
+
+table{
+    border-spacing:.25rem;
+}
+
+th,td{
+    padding-block:1rem;
+    width:100%;
+    text-align: left;
+}
+
+#social-details-heading{
+    font-size: x-large;
+}
+
+#social-details a{
+    text-decoration:none;
+    color:lightgreen;
+    font-size:large;
+}
+
+@media (max-width:800px)
+{
+    ul{
+        display: none;
+    }
+
+    .card{
+        margin-block:1rem;
+    }
+
+    #home-header{
+        font-size: 4rem;
+    }
+
+    #about-cover{
+        background-size:0rem;
+    }
+
+    .about{
+        margin: 0px;
+        width:85svw;
+    }
+
+    #hamburger-container{
+        display: flex;
+        cursor:pointer;
+    }
+
+    #resume-cover{
+        width:95svw;
+    }
+
+    /* .education,.skills,.languages{
+        width:auto;
+    } */
+}
